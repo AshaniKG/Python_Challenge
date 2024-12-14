@@ -19,6 +19,10 @@ while choice != exit:
     elif choice == remove:
         i = int (input("Enter the task number you want to remove: "))
         myTask.pop(i-1)
+        i = 1
+        for x in myTask:
+            print(f"{i}){x}")
+            i += 1
 
     elif choice == view:
         i = 1
