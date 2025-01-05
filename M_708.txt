@@ -1,0 +1,13 @@
+Student Index = 708 
+Sudent Name = alex 
+
+Stream = Mathematics Stream 
+
+Mathematics = 87 
+Physics = 69 
+Chemistry = 50 
+English = 64 
+
+Total Marks = 270 
+Average = 67.5 
+

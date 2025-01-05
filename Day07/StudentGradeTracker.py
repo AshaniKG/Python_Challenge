@@ -15,91 +15,97 @@ while option != 3:
     #_____________________________TO INSERT MARKS______________________________
 
     if option == 1: 
+
+        count = int (input("\nHow many students do you want to insert marks: ")) 
+
+        while count > 0:
         
-        #////--------------------Choose the Stream----------------------
+            #////--------------------Choose the Stream----------------------
 
-        print("\n 1) BIOLOGY STREAM\n 2) MATHEMATICS STREAM\n")
+            print("\n 1) BIOLOGY STREAM\n 2) MATHEMATICS STREAM\n")
 
-        choice = int (input ("Enter the number of the stream: ")) 
-
-
-    #_____________________________FOR A BIO STUDENT______________________________ 
-
-        if choice == 1:
-            B_index = int (input("\nEnter student index: "))
-            B_name = input ("Enter student name: ")
-
-            B_subject1 = int (input("\nMarks for Biology: "))
-            B_subject2 = int (input("Marks for Physics: "))
-            B_subject3 = int (input("Marks for Chemistry: "))
-            B_english = int (input("Marks for English: ")) 
+            choice = int (input ("Enter the number of the stream: ")) 
 
 
-            #////--------------------Creating the object for Bio Stream mark inserting----------------------
-            
-            B_Student = Biology_Stream (B_subject1, B_subject2, B_subject3, B_english)
+        #_____________________________FOR A BIO STUDENT______________________________ 
+
+            if choice == 1:
+                B_index = int (input("\nEnter student index: "))
+                B_name = input ("Enter student name: ")
+
+                B_subject1 = int (input("\nMarks for Biology: "))
+                B_subject2 = int (input("Marks for Physics: "))
+                B_subject3 = int (input("Marks for Chemistry: "))
+                B_english = int (input("Marks for English: ")) 
 
 
-            #////--------------Applying the total function to calculate and print the total for Bio Student----------------
-
-            B_total = B_Student.cal_total (B_subject1, B_subject2, B_subject3, B_english) 
-            print (f"\nTotal is: {B_total}")
-
-
-            #////-------------Applying the average function to calculate and print the average for Bio Student---------------
-
-            B_average = B_Student.cal_average (B_subject1, B_subject2, B_subject3, B_english, B_total) 
-            print (f"Average is: {B_average}")
-            
-
-            #////--------------------Save all details to file (Bio Stream)----------------------
-
-            B_save = B_Student.save_details (B_index, "B", B_name, "Biology Stream", B_subject1, B_subject2, B_subject3, "Biology", "Physics", "Chemistry", B_english, B_total, B_average)
+                #////--------------------Creating the object for Bio Stream mark inserting----------------------
+                
+                B_Student = Biology_Stream (B_subject1, B_subject2, B_subject3, B_english)
 
 
-            #////--------------------Show all details from file (Bio Stream)----------------------
+                #////--------------Applying the total function to calculate and print the total for Bio Student----------------
 
-            B_show = B_Student.show_details(B_index, "B") 
-
-
-
-        #_____________________________FOR A MATHS STUDENT______________________________
-
-        if choice == 2:
-            M_index = int (input("\nEnter student index: "))
-            M_name = input ("Enter student name: ")
-
-            M_subject1 = int (input("\nMarks for Mathematics: "))
-            M_subject2 = int (input("Marks for Physics: "))
-            M_subject3 = int (input("Marks for Chemistry: "))
-            M_english = int (input("Marks for English: "))
+                B_total = B_Student.cal_total (B_subject1, B_subject2, B_subject3, B_english) 
+                print (f"\nTotal is: {B_total}")
 
 
-            #////--------------------Creating the object for Maths Stream mark inserting----------------------
-            
-            M_Student = Maths_Stream (M_subject1, M_subject2, M_subject3, M_english)
+                #////-------------Applying the average function to calculate and print the average for Bio Student---------------
+
+                B_average = B_Student.cal_average (B_subject1, B_subject2, B_subject3, B_english, B_total) 
+                print (f"Average is: {B_average}")
+                
+
+                #////--------------------Save all details to file (Bio Stream)----------------------
+
+                B_save = B_Student.save_details (B_index, "B", B_name, "Biology Stream", B_subject1, B_subject2, B_subject3, "Biology", "Physics", "Chemistry", B_english, B_total, B_average)
 
 
-            #////--------------Applying the total function to calculate and print the total for Maths Student----------------
+                #////--------------------Show all details from file (Bio Stream)----------------------
 
-            M_total = M_Student.cal_total (M_subject1, M_subject2, M_subject3, M_english)  
-            print (f"\nTotal is: {M_total}")
-
-
-            #////-------------Applying the average function to calculate and print the average for Maths Student---------------
-
-            M_average = M_Student.cal_average (M_subject1, M_subject2, M_subject3, M_english, M_total) 
-            print (f"Average is: {M_average}")
+                B_show = B_Student.show_details(B_index, "B") 
 
 
-            #////--------------------Save all details to file (Maths Stream)----------------------
 
-            M_save = M_Student.save_details (M_index, "M", M_name, "Mathematics Stream", M_subject1, M_subject2, M_subject3, "Mathematics", "Physics", "Chemistry", M_english, M_total, M_average)
+            #_____________________________FOR A MATHS STUDENT______________________________
+
+            if choice == 2:
+                M_index = int (input("\nEnter student index: "))
+                M_name = input ("Enter student name: ")
+
+                M_subject1 = int (input("\nMarks for Mathematics: "))
+                M_subject2 = int (input("Marks for Physics: "))
+                M_subject3 = int (input("Marks for Chemistry: "))
+                M_english = int (input("Marks for English: "))
 
 
-            #////--------------------Show all details from file (Maths Stream)----------------------
+                #////--------------------Creating the object for Maths Stream mark inserting----------------------
+                
+                M_Student = Maths_Stream (M_subject1, M_subject2, M_subject3, M_english)
 
-            M_show = M_Student.show_details(M_index, "M") 
+
+                #////--------------Applying the total function to calculate and print the total for Maths Student----------------
+
+                M_total = M_Student.cal_total (M_subject1, M_subject2, M_subject3, M_english)  
+                print (f"\nTotal is: {M_total}")
+
+
+                #////-------------Applying the average function to calculate and print the average for Maths Student---------------
+
+                M_average = M_Student.cal_average (M_subject1, M_subject2, M_subject3, M_english, M_total) 
+                print (f"Average is: {M_average}")
+
+
+                #////--------------------Save all details to file (Maths Stream)----------------------
+
+                M_save = M_Student.save_details (M_index, "M", M_name, "Mathematics Stream", M_subject1, M_subject2, M_subject3, "Mathematics", "Physics", "Chemistry", M_english, M_total, M_average)
+
+
+                #////--------------------Show all details from file (Maths Stream)----------------------
+
+                M_show = M_Student.show_details(M_index, "M") 
+
+            count -= 1
 
 
 

@@ -1,0 +1,13 @@
+Student Index = 150 
+Sudent Name = anna 
+
+Stream = Mathematics Stream 
+
+Mathematics = 34 
+Physics = 67 
+Chemistry = 97 
+English = 68 
+
+Total Marks = 266 
+Average = 66.5 
+

@@ -1,0 +1,13 @@
+Student Index = 450 
+Sudent Name = sally 
+
+Stream = Mathematics Stream 
+
+Mathematics = 49 
+Physics = 87 
+Chemistry = 65 
+English = 73 
+
+Total Marks = 274 
+Average = 68.5 
+

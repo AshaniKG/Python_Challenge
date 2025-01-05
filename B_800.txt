@@ -1,0 +1,13 @@
+Student Index = 800 
+Sudent Name = gwen 
+
+Stream = Biology Stream 
+
+Biology = 75 
+Physics = 84 
+Chemistry = 79 
+English = 92 
+
+Total Marks = 330 
+Average = 82.5 
+

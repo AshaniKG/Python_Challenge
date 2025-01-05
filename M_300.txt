@@ -1,0 +1,13 @@
+Student Index = 300 
+Sudent Name = windy 
+
+Stream = Mathematics Stream 
+
+Mathematics = 48 
+Physics = 76 
+Chemistry = 58 
+English = 67 
+
+Total Marks = 249 
+Average = 62.25 
+

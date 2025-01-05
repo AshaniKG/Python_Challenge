@@ -1,0 +1,13 @@
+Student Index = 560 
+Sudent Name = lucy 
+
+Stream = Mathematics Stream 
+
+Mathematics = 52 
+Physics = 67 
+Chemistry = 83 
+English = 46 
+
+Total Marks = 248 
+Average = 62.0 
+

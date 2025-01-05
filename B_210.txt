@@ -1,0 +1,13 @@
+Student Index = 210 
+Sudent Name = jenny 
+
+Stream = Biology Stream 
+
+Biology = 80 
+Physics = 60 
+Chemistry = 65 
+English = 75 
+
+Total Marks = 280 
+Average = 70.0 
+

@@ -1,0 +1,13 @@
+Student Index = 304 
+Sudent Name = ben 
+
+Stream = Biology Stream 
+
+Biology = 90 
+Physics = 56 
+Chemistry = 47 
+English = 82 
+
+Total Marks = 275 
+Average = 68.75 
+

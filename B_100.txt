@@ -1,0 +1,13 @@
+Student Index = 100 
+Sudent Name = john 
+
+Stream = Biology Stream 
+
+Biology = 45 
+Physics = 75 
+Chemistry = 97 
+English = 82 
+
+Total Marks = 299 
+Average = 74.75 
+
